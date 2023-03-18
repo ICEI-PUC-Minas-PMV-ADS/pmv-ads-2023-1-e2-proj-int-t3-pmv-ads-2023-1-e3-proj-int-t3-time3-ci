@@ -2,9 +2,10 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+Gerenciar um condomínio residencial é, por muitas vezes, um problemas aos síndicos e empresas gestoras de condomínio. Diante o exposto, esse projeto tem como ponto central a criação de uma ferramenta que auxilie na gestão de condomínios. O programa de software criado, se propõe a ajudar otimizando a comunicação e a interação entre moradores, porteiro e síndico, por meio de alertas, agendamentos online e disponibilização de documentos aos moradores. 
+O desenvolvimento da problematização é baseada a partir das experiências empíricas dos membros dessa equipe, que em maioria, são moradores de condomínios residenciais e vivenciam essas falhas na comunicação,o que fragiliza a gestão do condomínio. 
+Diante o exposto, toda a evolução das etapas de trabalho é pautada na abstração de um problema apresentado no mundo real e trabalhada em uma solução de software.
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
 
