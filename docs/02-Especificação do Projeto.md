@@ -77,15 +77,26 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001|O sistema deve permitir o cadastro de usuários e moradias | ALTA | 
+|RF-002| O sistema deve permitir o cadastro do usuário proprietário  mediante a validação do usuário master.   | ALTA |
+|RF-003| O sistema deve permitir que o usuário master  realize o agendamento de reuniões e que o usuário proprietário receba um alerta de reunião agendada.  | MÉDIA |
+|RF-004| O sistema deve permitir que o usuário master  realize o cadastro de ata de reunião e outros documentos de interesse geral e que podem ser visualizados pelos proprietários.   | MÉDIA |
+|RF-005| O sistema deve permitir que o usuário porteiro registre o recebimento de encomendas para moradia específica e armazene uma foto da encomenda.  | MÉDIA |
+|RF-006| O sistema de alerta deve emitir um alerta ao usuário proprietário toda vez que for registrado uma encomenda para sua moradia e que o usuário porteiro registre o recebimento da encomenda pelo usuário proprietário.   | MÉDIA |
+|RF-007| O sistema deve permitir que o usuário master realize o cadastro de áreas comuns.   | BAIXA |
+|RF-008| O sistema deve permitir que o usuário proprietário solicite o uso de áreas comuns por meio de reservas de uso a serem aprovadas pelo usuário master reservas de áreas comuns do condomínio   | BAIXA |
+
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve possuir interface em nas plataformas Web, IOs e Android. | ALTA | 
+|RNF-002| Usuários sem permissão de administrador não podem ter acesso a dados de outros usuários. |  ALTA | 
+|RNF-003| O sistema deve ser fácil de usar e intuitivo, com uma interface amigável e bem projetada. |  MEDIA |
+|RNF-004| O sistema deve estar de acordo com o código civil brasileiro e com LGPD. |  BAIXA |
+|RNF-005| O sistema deve ser seguro para proteger as informações do condomínio contra acessos não autorizados. |  ALTA |
+|RNF-006| O sistema deve ter os perfis de acesso bem definidos em relação às permissões e proibições para impedir acessos à informações e funcionalidades. |  MEDIA |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
