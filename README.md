@@ -1,23 +1,24 @@
-# TÍTULO DO PROJETO
+# Condomínio Inteligente
 
-`CURSO`
+`Tecnologia em Análise e Desenv. de Sistemas - EAD`
 
-`DISCIPLINA`
+`Disciplina: Projeto: Desenvolvimento de Uma Aplicação Interativa`
 
-`SEMESTRE`
+`01/2023`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Projeto de solução para administração integrada de condomínios, com o objetivo de facilitar a comunicação e de tornar a estrutura gerencial de condomínios mais eficiente.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Jonathan Costa
+* Nayara Menezes
+* Renato Freitas
+* Rener Salvioli
+* Talita Pereira
 
 ## Orientador
 
-* Nome completo do professor 1
+* José Wilson da Costa
 
 ## Instruções de utilização
 
