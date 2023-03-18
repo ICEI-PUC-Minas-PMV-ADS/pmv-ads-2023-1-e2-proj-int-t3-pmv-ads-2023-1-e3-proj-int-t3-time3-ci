@@ -8,8 +8,36 @@ Diante o exposto, toda a evolução das etapas de trabalho é pautada na abstra�
 
 
 ## Personas
+As personas levantadas durante o processo de entendimento do problema são apresentadas na Figuras que se seguem.
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+
+1. Jorge Severino de Jesus
+Idade: 72
+Ocupação: porteiro, encanador, eletricista, motorista de  aplicativo e visagista de vitrine de calçados.
+Aplicativos: Instagram, whatsapp, twitter. Motivações: trabalha para sustentar 5 filhos, Gosta de dar informação em primeira mão. 
+Frustrações: Não ter terminado o curso de astrofísica pelo instituto universal brasileiro
+ter perdido R$ 2.894,26 em aplicação de bitcoin.
+Hobbies, História: Possui um canal no youtube que se chama “notícias do forno”, Atua como detetive particular e gosta de usar sua caneta espiã.
+
+2. Alberto Roberto
+Idade: 68
+Ocupação: Aposentado e síndico do Condomínio Moradas da Formosura.  
+Aplicativos: Facebook, Instagram, Aplicativos de bancos. Motivações: Atento às inovações tecnológicas, estar sendo útil às pessoas
+Frustrações: Não ter emplacado como jogador do madureira, ter abandonado a faculdade de ciência de dados.
+Hobbies, História: jogar truco, ir aos desfiles das escolas de samba e jogar futebol com os amigos.
+
+3. Eduardo Costa
+Idade: 39
+Ocupação: Médico, investidor na bolsa de valores no tempo livre e  Morador do Condomínio moradas da formosa
+Aplicativos: Snapchat, Instagram, Aplicativos de bancos, FaceTime, Investidora XP.
+Frustrações: Não ter encontrado uma esposa para compartilhar sua vida; Ter perdido 35% de seu dinheiro em ações mal estruturadas; Não ter aproveitado mais a vida na juventude.
+Hobbies, História: Leitura nos tempos vagos;, Investimento em ações; Viajar o mundo; Está fazendo seu próprio livro sobre sua especialização médica.
+
+
+
+
+
+
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
