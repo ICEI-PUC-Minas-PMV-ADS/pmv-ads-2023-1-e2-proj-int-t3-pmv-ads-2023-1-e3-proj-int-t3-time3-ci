@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-28T01:01:32.989Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/111.0" etag="77YibOCh9HxJIihtt23f" version="21.1.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-03-28T01:06:20.366Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/111.0" etag="hlbIGOGe6BNRxVtElnn7" version="21.1.1" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2587" dy="924" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -576,16 +576,16 @@
           <mxGeometry x="295" y="910" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="O75IVWUj4hi5aiR4DT5d-92" value="Gestão de Condomínio" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=20;horizontalStack=0;html=1;dashed=0;strokeColor=#BD7000;fontFamily=Helvetica;fontSize=23;fontColor=#000000;fillColor=#f0a30a;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="-761" y="-1102" width="2300" height="2182" as="geometry" />
+          <mxGeometry x="-761" y="-1102" width="2306" height="2182" as="geometry" />
         </mxCell>
         <mxCell id="O75IVWUj4hi5aiR4DT5d-93" value="&lt;div style=&quot;font-size: 15px;&quot;&gt;Porteiro&lt;span style=&quot;white-space: pre; font-size: 15px;&quot;&gt;	&lt;/span&gt;&lt;/div&gt;" style="swimlane;startSize=20;horizontal=0;html=1;dashed=0;strokeColor=#6c8ebf;fontFamily=Helvetica;fontSize=15;fillColor=#0000FF;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="O75IVWUj4hi5aiR4DT5d-92">
-          <mxGeometry x="20" width="2280" height="322" as="geometry" />
+          <mxGeometry x="20" width="2286" height="322" as="geometry" />
         </mxCell>
         <mxCell id="O75IVWUj4hi5aiR4DT5d-94" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;Usu.master&lt;/div&gt;" style="swimlane;startSize=20;horizontal=0;html=1;dashed=0;strokeColor=#6F0000;fontFamily=Helvetica;fontSize=16;fillColor=#a20025;fontColor=#ffffff;" vertex="1" parent="O75IVWUj4hi5aiR4DT5d-92">
-          <mxGeometry x="20" y="322" width="2280" height="1090" as="geometry" />
+          <mxGeometry x="20" y="322" width="2286" height="1090" as="geometry" />
         </mxCell>
         <mxCell id="O75IVWUj4hi5aiR4DT5d-95" value="Usu.proprietário" style="swimlane;startSize=20;horizontal=0;html=1;dashed=0;strokeColor=#001DBC;fontFamily=Helvetica;fontSize=16;fillColor=#0050ef;shadow=0;glass=0;swimlaneFillColor=none;fontColor=#ffffff;" vertex="1" parent="O75IVWUj4hi5aiR4DT5d-92">
-          <mxGeometry x="20" y="1412" width="2280" height="770" as="geometry" />
+          <mxGeometry x="20" y="1412" width="2286" height="770" as="geometry" />
         </mxCell>
         <mxCell id="O75IVWUj4hi5aiR4DT5d-102" value="verificar dados usuário" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" vertex="1" parent="1">
           <mxGeometry x="-45" y="-640" width="120" height="60" as="geometry" />
