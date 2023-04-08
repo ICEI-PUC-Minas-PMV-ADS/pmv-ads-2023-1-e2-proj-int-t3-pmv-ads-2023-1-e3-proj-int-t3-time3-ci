@@ -63,9 +63,15 @@ A equipe está organizada da seguinte maneira:
 
 
 Dentre as preocupações para a montagem da interface do sistema, estamos estabelecendo foco em questões como agilidade, acessibilidade e usabilidade. Desta forma, o projeto tem uma identidade visual padronizada em todas as telas que são projetadas para funcionamento na web e em dispositivos móveis.
-Fluxo do Usuário
+
+- Fluxo do Usuário
+- 
 O diagrama apresentado na Figura 2 mostra o fluxo de interação do usuário com o sistema.
 
+## Wireframes
+
+
+Conforme fluxo de telas do projeto, apresentado no item anterior, as telas do sistema são apresentadas em detalhes. As telas do sistema apresentam uma estrutura comum que é apresentada na Figura 3. Nesta estrutura, existem 4 blocos, descritos a seguir. São eles:
 
 
 ## Controle de Versão
