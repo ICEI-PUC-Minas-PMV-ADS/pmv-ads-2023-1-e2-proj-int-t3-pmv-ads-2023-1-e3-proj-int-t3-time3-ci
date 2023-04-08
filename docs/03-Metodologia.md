@@ -1,5 +1,5 @@
 
-# Metodologia
+## Metodologia
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
@@ -41,28 +41,30 @@ A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para def
 A equipe está organizada da seguinte maneira:
 
 
-Scrum Master: Jonathan Costa
-Product Owner: Talita Pereira
-Equipe de Desenvolvimento
-Renato Freitas
-Renner Júnior
-Equipe de Design
-Nayara de Araújo
+- Scrum Master: Jonathan Costa
+- Product Owner: Talita Pereira
+- Equipe de Desenvolvimento
+- Renato Freitas
+- Renner Júnior
+
+  Equipe de Design
+  
+- Nayara de Araújo
 
 A organização e distribuição das tarefas do projeto se dará por meio de reuniões de Sprints com apoio da organização em quadro Kanban armazenado eletronicamente no site do GitHub Project.  Deste modo, cada membro do time, será responsável por atualizar o status da sua tarefa. A seguir, é apresentado os conceitos metodológicos para o andamento das atividades:  
 
 
 
-Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista.
+> - Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista.
 
 
-To Do: apresenta a lista de atividades identificadas e priorizadas pela equipe de desenvolvimento. Nela, apresenta todas as funcionalidades apresentadas pelo Product Backlog.
+> - To Do: apresenta a lista de atividades identificadas e priorizadas pela equipe de desenvolvimento. Nela, apresenta todas as funcionalidades apresentadas pelo Product Backlog.
 
 
-Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá. Esta lista representa quais as atividades estão sendo realizadas, de acordo com a Sprint determinada para o desenvolvimento. Apresentando uma cópia fiel do que está sendo trabalhado.
+> - Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá. Esta lista representa quais as atividades estão sendo realizadas, de acordo com a Sprint determinada para o desenvolvimento. Apresentando uma cópia fiel do que está sendo trabalhado.
 
 
-Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para serem entregues ao usuário. Não há mais edições ou revisões necessárias, a tarefa está pronta.
+> - Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para serem entregues ao usuário. Não há mais edições ou revisões necessárias, a tarefa está pronta.
 
 
 A funcionalidade de quadro Kanban disponível na ferramenta do GitHUb foi utilizada pelo grupo como ferramenta de gerenciamento de projetos e está disponível através da URL Quadro de Gerenciamento de Projetos e é apresentado, no estado atual, na Figura 1. 
