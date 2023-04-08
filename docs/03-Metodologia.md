@@ -1,5 +1,5 @@
 
-## Metodologia
+# Metodologia
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
@@ -7,7 +7,7 @@
 
 A metodologia contempla as definições de ferramental utilizado pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
 
-# Relação de Ambientes de Trabalho
+## Relação de Ambientes de Trabalho
 
 
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.  
@@ -32,7 +32,7 @@ GitHub
 https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/284
 
 		 
-# Gerenciamento do Projeto
+## Gerenciamento do Projeto
 
 
 A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento.
@@ -51,7 +51,7 @@ A equipe está organizada da seguinte maneira:
   
 - Nayara de Araújo
 
-A organização e distribuição das tarefas do projeto se dará por meio de reuniões de Sprints com apoio da organização em quadro Kanban armazenado eletronicamente no site do GitHub Project.  Deste modo, cada membro do time, será responsável por atualizar o status da sua tarefa. A seguir, é apresentado os conceitos metodológicos para o andamento das atividades:  
+- A organização e distribuição das tarefas do projeto se dará por meio de reuniões de Sprints com apoio da organização em quadro Kanban armazenado eletronicamente no site do GitHub Project.  Deste modo, cada membro do time, será responsável por atualizar o status da sua tarefa. A seguir, é apresentado os conceitos metodológicos para o andamento das atividades:  
 
 
 
