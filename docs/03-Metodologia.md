@@ -7,7 +7,7 @@
 
 A metodologia contempla as definições de ferramental utilizado pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
 
-## Relação de Ambientes de Trabalho
+# Relação de Ambientes de Trabalho
 
 
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.  
@@ -31,9 +31,8 @@ Gerenciamento do Projeto
 GitHub
 https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/284
 
-
 		 
-Gerenciamento do Projeto
+# Gerenciamento do Projeto
 
 
 A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento.
