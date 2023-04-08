@@ -59,6 +59,14 @@ A equipe está organizada da seguinte maneira:
 
 ![Exemplo de Caso de Uso](img/quadro_gerenciamento_projetos.png)
 
+
+## Diagrama de Classes
+
+- Em UML, diagramas de classes são um de seis tipos de diagrama estrutural. Os diagramas de classe são fundamentais para o processo de modelagem de objetos e modelam a estrutura estática de um sistema. Dependendo da complexidade de um sistema, é possível utilizar um único diagrama de classe para modelar um sistema inteiro ou vários diagramas de classe para modelar os componentes de um sistema.
+Os diagramas de classe são as cópias do sistema ou subsistema. Você pode utilizar os diagramas de classe para modelar os objetos que compõem o sistema, para exibir os relacionamentos entre os objetos e para descrever o que esses objetos fazem e os serviços que eles fornecem.
+
+
+
 ## Projeto de Interface
 
 
@@ -72,6 +80,17 @@ O diagrama apresentado na Figura 2 mostra o fluxo de interação do usuário com
 
 
 Conforme fluxo de telas do projeto, apresentado no item anterior, as telas do sistema são apresentadas em detalhes. As telas do sistema apresentam uma estrutura comum que é apresentada na Figura 3. Nesta estrutura, existem 4 blocos, descritos a seguir. São eles:
+
+
+
+## Plano de Testes de Software
+
+-O teste de software geralmente é a última etapa na construção de um programa, visando checar o seu nível de qualidade. Os defeitos que um teste busca identificar incluem erro de compatibilidade, de algum algoritmo, de requisitos que não podem ser complementados, limitação de hardware etc. A lista é grande e aumenta com o tamanho do programa.
+
+
+|ID     | Funcionalidade (teste usuário)  |Entrada de funcionalidade (como executar) ||Saída esperada | Registro de teste (o que aconteceu - descrição) |
+|-------|-------------------------|----|
+|RNF-001| O sistema deve possuir interface em nas plataformas Web, IOs e Android. | ALTA | 
 
 
 ## Controle de Versão
