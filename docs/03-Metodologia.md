@@ -14,8 +14,8 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 
 Ambiente  |Plataforma  | Link de Acesso|
 |------|-----------------------------------------|----|
-|Repositório de código fonte|GitHub | hhttps://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time3-ci| 
-|Documentos do projeto|Google Drive | A[LTA](https://drive.google.com/drive/u/1/folders/195grl54t2GMdTbW6Zq-yvgbFsO1S_rWc) |
+|Repositório de código fonte|GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time3-ci| 
+|Documentos do projeto|Google Drive | https://drive.google.com/drive/u/1/folders/195grl54t2GMdTbW6Zq-yvgbFsO1S_rWc |
 |Projeto de Interface e  Wireframes|O sistema deve permitir o cadastro de usuários e moradias | ALTA |
 |Gerenciamento do Projeto|GitHub | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/284 |
 
