@@ -19,29 +19,11 @@ Ambiente  |Plataforma  | Link de Acesso|
 |Projeto de Interface e  Wireframes|O sistema deve permitir o cadastro de usuários e moradias | ALTA |
 |Gerenciamento do Projeto|GitHub | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/284 |
 
-
-Ambiente
-Plataforma
-Link de Acesso
-Repositório de código fonte
-GitHub
-hhttps://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time3-ci
-Documentos do projeto
-Google Drive
-https://drive.google.com/drive/u/1/folders/195grl54t2GMdTbW6Zq-yvgbFsO1S_rWc
- 
-Projeto de Interface e  Wireframes
-MarvelApp
-https://marvelapp.com/4hd6091  
-Gerenciamento do Projeto
-GitHub
-https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/284
-
 		 
 ## Gerenciamento do Projeto
 
 
-A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento.
+- A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento./
 
 
 A equipe está organizada da seguinte maneira:
@@ -76,6 +58,14 @@ A equipe está organizada da seguinte maneira:
 - A funcionalidade de quadro Kanban disponível na ferramenta do GitHUb foi utilizada pelo grupo como ferramenta de gerenciamento de projetos e está disponível através da URL Quadro de Gerenciamento de Projetos e é apresentado, no estado atual, na Figura 1. 
 
 ![Exemplo de Caso de Uso](img/quadro_gerenciamento_projetos.png)
+
+## Projeto de Interface
+
+
+Dentre as preocupações para a montagem da interface do sistema, estamos estabelecendo foco em questões como agilidade, acessibilidade e usabilidade. Desta forma, o projeto tem uma identidade visual padronizada em todas as telas que são projetadas para funcionamento na web e em dispositivos móveis.
+Fluxo do Usuário
+O diagrama apresentado na Figura 2 mostra o fluxo de interação do usuário com o sistema.
+
 
 
 ## Controle de Versão
