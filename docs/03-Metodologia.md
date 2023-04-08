@@ -69,7 +69,7 @@ A equipe está organizada da seguinte maneira:
 
 A funcionalidade de quadro Kanban disponível na ferramenta do GitHUb foi utilizada pelo grupo como ferramenta de gerenciamento de projetos e está disponível através da URL Quadro de Gerenciamento de Projetos e é apresentado, no estado atual, na Figura 1. 
 
-![Exemplo de Caso de Uso](img/cadastrar_usuario_moradia.png)
+![Exemplo de Caso de Uso](img/cadastrar_areacomum.png)
 
 
 ## Controle de Versão
