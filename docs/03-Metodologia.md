@@ -3,7 +3,53 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+3. Metodologia
+
+A metodologia contempla as definições de ferramental utilizado pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
+
+Relação de Ambientes de Trabalho
+Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.  
+
+
+
+Ambiente
+Plataforma
+Link de Acesso
+Repositório de código fonte
+GitHub
+hhttps://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t3-pmv-ads-2023-1-e3-proj-int-t3-time3-ci
+Documentos do projeto
+Google Drive
+https://drive.google.com/drive/u/1/folders/195grl54t2GMdTbW6Zq-yvgbFsO1S_rWc
+ 
+Projeto de Interface e  Wireframes
+MarvelApp
+https://marvelapp.com/4hd6091  
+Gerenciamento do Projeto
+GitHub
+https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/284
+
+
+		 
+Gerenciamento do Projeto
+A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento.
+A equipe está organizada da seguinte maneira:
+Scrum Master: Jonathan Costa
+Product Owner: Talita Pereira
+Equipe de Desenvolvimento
+Renato Freitas
+Renner Júnior
+Equipe de Design
+Nayara de Araújo
+
+A organização e distribuição das tarefas do projeto se dará por meio de reuniões de Sprints com apoio da organização em quadro Kanban armazenado eletronicamente no site do GitHub Project.  Deste modo, cada membro do time, será responsável por atualizar o status da sua tarefa. A seguir, é apresentado os conceitos metodológicos para o andamento das atividades:  
+
+Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista.
+To Do: apresenta a lista de atividades identificadas e priorizadas pela equipe de desenvolvimento. Nela, apresenta todas as funcionalidades apresentadas pelo Product Backlog.
+Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá. Esta lista representa quais as atividades estão sendo realizadas, de acordo com a Sprint determinada para o desenvolvimento. Apresentando uma cópia fiel do que está sendo trabalhado.
+Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para serem entregues ao usuário. Não há mais edições ou revisões necessárias, a tarefa está pronta.
+A funcionalidade de quadro Kanban disponível na ferramenta do GitHUb foi utilizada pelo grupo como ferramenta de gerenciamento de projetos e está disponível através da URL Quadro de Gerenciamento de Projetos e é apresentado, no estado atual, na Figura 1. 
+
 
 ## Controle de Versão
 
