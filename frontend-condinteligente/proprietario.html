@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condomínio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+      <div class="container">
+        <h1>Condomínio Inteligente</h1>
+
+        <nav>
+          <button onclick="showUsodeArea()">Solicitar uso de Area Comum</button>
+          <button onclick="showNotificacao()">Notificações</button>
+          <button onclick="showAta()">Ata das Reuniões</button>
+        </nav>
+
+      </div>
+    </header>
+    
+    <main>
+      <div id="uso-area" class="screen hidden">
+        <div class="container">
+          <div class="template-content">
+            <label for="name">Nome</label>
+            <input type="text" id="name" required>
+
+            <label for="apartment">Número do Apartamento</label>
+            <input type="text" id="apartment" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" required>
+  
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+  
+            <label for="bloco">Bloco</label>
+            <input type="number" id="bloco" required>
+
+            <select name="areas-comuns">
+              <option value="valor1">Piscina</option>
+              <option value="valor2">Salão de festa</option>
+              <option value="valor2">Area gourmet</option>
+            </select>
+            
+            <input type="submit" value="Reservar">
+          </div>
+        </div>
+      </div>
+
+      <div id="notificacao" class="screen hidden">
+        <div class="container">
+          <div class="notificacao-content">
+            <h4 class="notificacao-title">Sua Encomenda Chegou</h4>
+            <p class="notificao-data"> 02/04/2023 | 14:22</p>
+            <p class="notificacao-text">Sua encomenda está na portaria, venha buscar!</p>
+          </div>
+
+          <div class="notificacao-content-reuniao">
+            <h4 class="notificacao-title">Reunião | Fachada do prédio</h4>
+            <span>02</span>
+            <p class="notificao-data-agendamento"> 02/05/2023 | 14:00</p>
+            <p class="notificacao-text">Reunião sobre a Fachada do prédio</p>
+          </div>
+
+          <div class="notificacao-content">
+            <h4 class="notificacao-title">Sua Encomenda Chegou</h4>
+            <p class="notificao-data"> 02/04/2023 | 14:22</p>
+            <p class="notificacao-text">Sua encomenda está na portaria, venha buscar!</p>
+          </div>
+
+          <div class="notificacao-content">
+            <h4 class="notificacao-title">Sua Encomenda Chegou</h4>
+            <p class="notificao-data"> 02/04/2023 | 14:22</p>
+            <p class="notificacao-text">Sua encomenda está na portaria, venha buscar!</p>
+          </div>
+
+          <div class="notificacao-content-reuniao">
+            <h4 class="notificacao-title">Reunião | Fachada do prédio</h4>
+            <span>01</span>
+            <p class="notificao-data-agendamento"> 02/05/2023 | 14:00</p>
+            <p class="notificacao-text">Reunião sobre a Fachada do prédio</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="ata" class="screen hidden">
+        <div class="container">
+
+          <div class="gallery">
+            <img src="./ata.png" alt="Foto 1">
+            <img src="./ata.png" alt="Foto 2">
+            <img src="./ata.png" alt="Foto 3">
+            <img src="./ata.png" alt="Foto 1">
+            <img src="./ata.png" alt="Foto 2">
+            <img src="./ata.png" alt="Foto 3">
+            <img src="./ata.png" alt="Foto 1">
+            <img src="./ata.png" alt="Foto 2">
+          </div>
+        
+          <div class="modal" id="modal">
+            <div class="modal-content">
+              <img src="" alt="Foto ampliada" id="modal-image">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      
+    </main>
+
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
