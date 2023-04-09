@@ -126,7 +126,7 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+O diagrama contempla as principais ligações previstas entre casos de uso e atores e permite detalhar os Requisitos Funcionais identificados na etapa de elicitação. Ressaltamos que, para os requisitos não funcionais, não será utilizado diagrama de caso de uso.  
 
 ![Exemplo de Caso de Uso](img/cadastrar_usuario_moradia.png)
 ![Exemplo de Caso de Uso](img/receber_mercadorias.png)
