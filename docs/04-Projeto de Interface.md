@@ -5,7 +5,21 @@
 
 Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+Tela Porteiro
+ ![image](https://user-images.githubusercontent.com/86340530/230805231-5ed142f9-038a-4e4a-b6fa-59eaa95bcbeb.png)
+
+Tela Proprietário
+![image](https://user-images.githubusercontent.com/86340530/230805291-9adb295f-df28-4c50-8615-192e1d54fe1c.png)
+![image](https://user-images.githubusercontent.com/86340530/230805304-5b41ecd5-0e0b-48f2-b2b6-2dae1e418005.png)
+![image](https://user-images.githubusercontent.com/86340530/230805312-bd528858-b837-4bda-85c5-ba85eea0fd79.png)
+
+Tela Sindico
+![image](https://user-images.githubusercontent.com/86340530/230805349-76fbef8c-11fa-4848-a61c-4c181d2812c1.png)
+![image](https://user-images.githubusercontent.com/86340530/230805358-fc94e30c-d736-4fc0-b955-808822f51788.png)
+![image](https://user-images.githubusercontent.com/86340530/230805369-5ac805dc-ccde-4ee6-86ff-a8e6bdf666d8.png)
+![image](https://user-images.githubusercontent.com/86340530/230805381-e14e8edc-fcf8-49a3-98bb-1cb66568f762.png)
+![image](https://user-images.githubusercontent.com/86340530/230805397-e60ab20f-6907-4a2f-ab35-6343ac584a0f.png)
+
 
 ## Diagrama de Fluxo
 
