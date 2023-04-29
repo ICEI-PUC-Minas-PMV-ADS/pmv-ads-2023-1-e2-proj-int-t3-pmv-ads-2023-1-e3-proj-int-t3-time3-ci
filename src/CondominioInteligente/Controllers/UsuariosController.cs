@@ -23,7 +23,7 @@ namespace CondominioInteligente.Controllers
         public async Task<IActionResult> Index()
         {
               return _context.Usuario != null ? 
-                          View(await _context.Usuario.ToListAsync()) :
+                          View("Sindico",await _context.Usuario.FirstOrDefaultAsync(u => u.CodTipoUsuario == 1)) :
                           Problem("Entity set 'CondominioInteligenteContext.Usuario'  is null.");
         }
 
