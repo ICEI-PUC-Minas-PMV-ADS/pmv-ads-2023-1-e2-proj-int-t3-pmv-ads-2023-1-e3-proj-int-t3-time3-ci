@@ -9,14 +9,14 @@ namespace CondominioInteligente.Models
     {
         [Key]
         public int CodUsuario { get; set; }
-        [Required(ErrorMessage = "Obrigatório Informar o Nome")]
-
+ 
         public int CodTipoUsuario { get; set; }
 
-        public string Nome { get; set; }
+        [Required(ErrorMessage = "Obrigatório Informar o Nome")]
+        public string Nome { get; set; } = string.Empty;
 
-        public string Email { get; set; }
+        public string Email { get; set; } = string.Empty;
 
-        public ICollection<AreaComum> AreaComums { get; set; }
+        public ICollection<AreaComum>? AreaComums { get; set; }
     }
 }

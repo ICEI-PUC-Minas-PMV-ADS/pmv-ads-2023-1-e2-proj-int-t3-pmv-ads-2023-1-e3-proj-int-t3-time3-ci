@@ -11,6 +11,6 @@ namespace CondominioInteligente.Models
         public int CodArea { get; set; }
         [Required(ErrorMessage = "Obrigatório Informar o Nome")]
 
-        public string Nome { get; set; }
+        public string Nome { get; set; } = string.Empty;
     }
 }
