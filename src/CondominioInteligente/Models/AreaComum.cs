@@ -4,19 +4,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CondominioInteligente.Models
 {
-    [Table("usuarios")]
-    public class Usuario
+ 
+    public class AreaComum
     {
         [Key]
-        public int CodUsuario { get; set; }
+        public int CodArea { get; set; }
         [Required(ErrorMessage = "Obrigatório Informar o Nome")]
 
-        public int CodTipoUsuario { get; set; }
-
         public string Nome { get; set; }
-
-        public string Email { get; set; }
-
-        public ICollection<AreaComum> AreaComums { get; set; }
     }
 }

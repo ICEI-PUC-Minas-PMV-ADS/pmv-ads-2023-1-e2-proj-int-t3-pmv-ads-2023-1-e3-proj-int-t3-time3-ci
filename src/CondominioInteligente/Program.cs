@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using CondominioInteligente.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<CondominioInteligenteContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CondominioInteligenteContext") ?? throw new InvalidOperationException("Connection string 'CondominioInteligenteContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
