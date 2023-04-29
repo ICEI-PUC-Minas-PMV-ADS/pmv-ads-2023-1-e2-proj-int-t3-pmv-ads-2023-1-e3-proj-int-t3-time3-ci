@@ -1,0 +1,251 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+}
+
+img {
+    width: 100%;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1,
+h2,
+h3 {
+    padding: 30px 0px;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #68adf3;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: #68adf3;
+    flex-wrap: wrap;
+}
+
+    nav button {
+        font-size: 18px;
+        background-color: #5795d3;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 4px;
+    }
+
+        nav button:hover {
+            background-color: #3b76b1;
+        }
+
+.screen {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.green {
+    background-color: rgb(125, 211, 125);
+}
+
+.red {
+    background-color: rgb(219, 108, 108)
+}
+
+button {
+    border: none;
+    padding: 7px 20px;
+    color: #f4f4f4;
+    background: #5795d3;
+    cursor: pointer;
+}
+
+    button:hover {
+        background: #3b76b1;
+    }
+
+input[type="submit"] {
+    background: #5795d3;
+    color: #f4f4f4;
+    border: 1px solid #bababa;
+    padding: 10px;
+    cursor: pointer;
+}
+
+    input[type="submit"]:hover {
+        background: #3b76b1;
+    }
+
+input,
+select {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #bababa;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 30px;
+    justify-content: center;
+}
+
+    .gallery img {
+        width: 250px;
+        height: 250px;
+        cursor: pointer;
+        object-fit: contain;
+    }
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 90%;
+}
+
+    .modal-content img {
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 70vh;
+    }
+
+.template-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+    .template-content input {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+.tela-solicitacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.solicitacao {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+    .solicitacao p {
+        display: block;
+        width: 100%;
+    }
+
+
+/* Modal de Sucesso */
+.modal {
+    display: none; /* Esconde o modal por padrão */
+    position: fixed; /* Permite a sobreposição em outros elementos */
+    z-index: 1; /* Define a ordem de empilhamento */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite rolagem quando o conteúdo do modal excede a altura da janela */
+    background-color: rgba(0,0,0,0.4); /* Adiciona um fundo escuro com transparência */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centraliza o conteúdo na tela */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.notificacao-content,
+.notificacao-content-reuniao {
+    padding: 12px;
+    border-bottom: 1px solid #68adf3;
+}
