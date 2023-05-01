@@ -41,7 +41,7 @@ namespace CondominioInteligente.Migrations
 
                     b.HasIndex("UsuarioCodUsuario");
 
-                    b.ToTable("AreaComum");
+                    b.ToTable("AreaComum", (string)null);
                 });
 
             modelBuilder.Entity("CondominioInteligente.Models.Usuario", b =>
@@ -65,7 +65,7 @@ namespace CondominioInteligente.Migrations
 
                     b.HasKey("CodUsuario");
 
-                    b.ToTable("usuarios");
+                    b.ToTable("usuarios", (string)null);
                 });
 
             modelBuilder.Entity("CondominioInteligente.Models.AreaComum", b =>
