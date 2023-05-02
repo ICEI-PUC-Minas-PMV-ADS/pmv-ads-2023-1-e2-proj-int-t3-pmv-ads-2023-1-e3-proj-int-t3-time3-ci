@@ -18,5 +18,13 @@ namespace CondominioInteligente.Models
         public string Email { get; set; } = string.Empty;
 
         public ICollection<AreaComum>? AreaComums { get; set; }
+
+        public ICollection<Moradia>? Moradias { get; set; }
+
+        public ICollection<Encomenda>? Encomendas { get; set; }
+
+        public ICollection<Reuniao>? Reunioes { get; set; }
+
+
     }
 }

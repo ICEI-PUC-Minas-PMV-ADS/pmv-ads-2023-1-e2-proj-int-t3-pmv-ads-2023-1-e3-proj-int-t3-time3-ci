@@ -4,6 +4,7 @@ using CondominioInteligente.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CondominioInteligente.Migrations
 {
     [DbContext(typeof(CondominioInteligenteContext))]
-    partial class CondominioInteligenteContextModelSnapshot : ModelSnapshot
+    [Migration("20230501155246_moradia_encomenda")]
+    partial class moradia_encomenda
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -42,28 +45,6 @@ namespace CondominioInteligente.Migrations
                     b.HasIndex("UsuarioCodUsuario");
 
                     b.ToTable("AreaComum");
-                });
-
-            modelBuilder.Entity("CondominioInteligente.Models.Documento", b =>
-                {
-                    b.Property<int>("CodDocumento")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CodDocumento"));
-
-                    b.Property<byte[]>("Arquivo")
-                        .IsRequired()
-                        .HasColumnType("varbinary(max)");
-
-                    b.Property<int>("CodReuniao")
-                        .HasColumnType("int");
-
-                    b.HasKey("CodDocumento");
-
-                    b.HasIndex("CodReuniao");
-
-                    b.ToTable("Documento");
                 });
 
             modelBuilder.Entity("CondominioInteligente.Models.Encomenda", b =>
@@ -110,39 +91,6 @@ namespace CondominioInteligente.Migrations
                     b.ToTable("Moradia");
                 });
 
-            modelBuilder.Entity("CondominioInteligente.Models.Reuniao", b =>
-                {
-                    b.Property<int>("CodReuniao")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CodReuniao"));
-
-                    b.Property<string>("Ata")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("CodUsuario")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("Data")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("NomeReuniao")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Pauta")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("CodReuniao");
-
-                    b.HasIndex("CodUsuario");
-
-                    b.ToTable("Reuniao");
-                });
-
             modelBuilder.Entity("CondominioInteligente.Models.Usuario", b =>
                 {
                     b.Property<int>("CodUsuario")
@@ -174,21 +122,10 @@ namespace CondominioInteligente.Migrations
                         .HasForeignKey("UsuarioCodUsuario");
                 });
 
-            modelBuilder.Entity("CondominioInteligente.Models.Documento", b =>
-                {
-                    b.HasOne("CondominioInteligente.Models.Reuniao", "Reuniao")
-                        .WithMany("Documentos")
-                        .HasForeignKey("CodReuniao")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Reuniao");
-                });
-
             modelBuilder.Entity("CondominioInteligente.Models.Encomenda", b =>
                 {
                     b.HasOne("CondominioInteligente.Models.Usuario", "Porteiro")
-                        .WithMany("Encomendas")
+                        .WithMany("Encomenda")
                         .HasForeignKey("CodUsuario")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -199,7 +136,7 @@ namespace CondominioInteligente.Migrations
             modelBuilder.Entity("CondominioInteligente.Models.Moradia", b =>
                 {
                     b.HasOne("CondominioInteligente.Models.Usuario", "Proprietario")
-                        .WithMany("Moradias")
+                        .WithMany("Moradia")
                         .HasForeignKey("CodUsuario")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -207,31 +144,13 @@ namespace CondominioInteligente.Migrations
                     b.Navigation("Proprietario");
                 });
 
-            modelBuilder.Entity("CondominioInteligente.Models.Reuniao", b =>
-                {
-                    b.HasOne("CondominioInteligente.Models.Usuario", "UsuarioMaster")
-                        .WithMany("Reunioes")
-                        .HasForeignKey("CodUsuario")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("UsuarioMaster");
-                });
-
-            modelBuilder.Entity("CondominioInteligente.Models.Reuniao", b =>
-                {
-                    b.Navigation("Documentos");
-                });
-
             modelBuilder.Entity("CondominioInteligente.Models.Usuario", b =>
                 {
                     b.Navigation("AreaComums");
 
-                    b.Navigation("Encomendas");
+                    b.Navigation("Encomenda");
 
-                    b.Navigation("Moradias");
-
-                    b.Navigation("Reunioes");
+                    b.Navigation("Moradia");
                 });
 #pragma warning restore 612, 618
         }
