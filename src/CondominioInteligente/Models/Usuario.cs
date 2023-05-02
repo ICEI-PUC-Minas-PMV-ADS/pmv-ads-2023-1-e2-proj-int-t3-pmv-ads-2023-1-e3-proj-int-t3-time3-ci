@@ -19,8 +19,12 @@ namespace CondominioInteligente.Models
 
         public ICollection<AreaComum>? AreaComums { get; set; }
 
-        public ICollection<Moradia>? Moradia { get; set; }
+        public ICollection<Moradia>? Moradias { get; set; }
 
-        public ICollection<Encomenda>? Encomenda { get; set; }
+        public ICollection<Encomenda>? Encomendas { get; set; }
+
+        public ICollection<Reuniao>? Reunioes { get; set; }
+
+
     }
 }
