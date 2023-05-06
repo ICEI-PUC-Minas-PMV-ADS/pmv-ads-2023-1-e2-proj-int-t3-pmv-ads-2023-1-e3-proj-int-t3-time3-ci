@@ -10,11 +10,13 @@
 </head>
 <body>
     <header>
-        <a href="@Url.Action("Index", "Home")">
-            <div class="container" asp-action="Index">
-                <h1>Condomínio Inteligente</h1>
+        <div class="d-flex justify-content-around">
+            <div class="align-self-center" >
+                <button class="botao-home" onclick="irParaHome()">Home </button>
             </div>
-        </a>
+            <h1 class="  flex-grow-1">Condomínio Inteligente</h1>
+        </div>
+
     </header>
 
     <main>
@@ -31,4 +33,9 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+<script>
+    function irParaHome(){
+        window.location.href = '/Home'
+    }
+</script>
 </html>
