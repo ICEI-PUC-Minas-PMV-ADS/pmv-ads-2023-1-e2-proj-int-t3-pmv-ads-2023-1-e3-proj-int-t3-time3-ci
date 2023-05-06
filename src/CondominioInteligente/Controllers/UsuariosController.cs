@@ -19,13 +19,20 @@ namespace CondominioInteligente.Controllers
             _context = context;
         }
 
-        // GET: Usuarios
         public async Task<IActionResult> Index()
         {
-              return _context.Usuario != null ? 
-                          View("Sindico",await _context.Usuario.FirstOrDefaultAsync(u => u.CodTipoUsuario == 1)) :
-                          Problem("Entity set 'CondominioInteligenteContext.Usuario'  is null.");
+            var usarios = await _context.Usuario.Where(u => u.CodTipoUsuario == 1).ToListAsync();
+
+            return View(usarios);
         }
+        public async Task<IActionResult> Listagem()
+        {
+            var usarios = await _context.Usuario.Where(u => u.CodTipoUsuario == 1).ToListAsync();
+
+            return PartialView("Index", usarios);
+        }
+
+
 
         // GET: Usuarios/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -150,14 +157,14 @@ namespace CondominioInteligente.Controllers
             {
                 _context.Usuario.Remove(usuario);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool UsuarioExists(int id)
         {
-          return (_context.Usuario?.Any(e => e.CodUsuario == id)).GetValueOrDefault();
+            return (_context.Usuario?.Any(e => e.CodUsuario == id)).GetValueOrDefault();
         }
     }
 }

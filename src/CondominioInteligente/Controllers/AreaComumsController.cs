@@ -27,6 +27,13 @@ namespace CondominioInteligente.Controllers
                           Problem("Entity set 'CondominioInteligenteContext.AreaComum'  is null.");
         }
 
+        public async Task<IActionResult> Listagem()
+        {
+            return _context.AreaComum != null ?
+                        PartialView(await _context.AreaComum.ToListAsync()) :
+                        Problem("Entity set 'CondominioInteligenteContext.AreaComum'  is null.");
+        }
+
         // GET: AreaComums/Details/5
         public async Task<IActionResult> Details(int? id)
         {

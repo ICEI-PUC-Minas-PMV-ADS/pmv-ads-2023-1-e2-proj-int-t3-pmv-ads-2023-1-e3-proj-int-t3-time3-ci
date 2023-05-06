@@ -1,0 +1,45 @@
+﻿
+<nav>
+    <button onclick="showSolicitacoes()">Solicitações</button>
+    <button onclick="carregarCadastroUsuarios()">Cadastro De usuário</button>
+    <button onclick="carrgarCadastroMoradia()">Cadastro de Moradia</button>
+    <button onclick="cadastrarAreasComuns()">Cadastro de Area Comum</button>
+    <button onclick="showReuniao()">Reuniao</button>
+
+</nav>
+<div id="exibicao"></div>
+<script type="text/javascript">
+
+    function carregarCadastroUsuarios() {
+
+        $.get('@Url.Action("Listagem", "Usuarios")', {}, function (data) {
+
+            $("#exibicao").empty();
+            $("#exibicao").html(data);
+
+        });
+    }
+
+    function carrgarCadastroMoradia() {
+
+        $.get('@Url.Action("Listagem", "Moradias")', {}, function (data) {
+
+            $("#exibicao").empty();
+            $("#exibicao").html(data);
+
+        });
+    }
+
+    function cadastrarAreasComuns() {
+
+        $.get('@Url.Action("Listagem", "AreaComums")', {}, function (data) {
+
+            $("#exibicao").empty();
+            $("#exibicao").html(data);
+
+        });
+    }
+
+
+   
+</script>
