@@ -34,6 +34,7 @@ namespace CondominioInteligente.Controllers
                         Problem("Entity set 'CondominioInteligenteContext.AreaComum'  is null.");
         }
 
+
         // GET: AreaComums/Details/5
         public async Task<IActionResult> Details(int? id)
         {

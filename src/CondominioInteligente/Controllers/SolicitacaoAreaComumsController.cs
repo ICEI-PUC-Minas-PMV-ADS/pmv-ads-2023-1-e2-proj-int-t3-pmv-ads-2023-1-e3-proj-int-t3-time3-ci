@@ -95,7 +95,7 @@ namespace CondominioInteligente.Controllers
         private void ViewBagSolicitacao()
         {
             ViewData["OpcoesArea"] = new SelectList(_context.AreaComum, "CodArea", "Nome");
-            ViewData["OpcoesUsuario"] = new SelectList(_context.Usuario, "CodUsuario", "Nome");
+            ViewData["OpcoesUsuario"] = new SelectList(_context.Usuario.Where(u=> u.Aprovado == true), "CodUsuario", "Nome");
         }
 
         // GET: SolicitacaoAreaComums/Edit/5

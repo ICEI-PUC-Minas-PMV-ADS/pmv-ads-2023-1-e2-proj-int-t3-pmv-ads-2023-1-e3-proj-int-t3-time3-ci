@@ -25,7 +25,7 @@ namespace CondominioInteligente.Models
 
         public ICollection<Reuniao>? Reunioes { get; set; }
 
-        public bool Aprovado { get; set; }
+        public bool? Aprovado { get; set; }
 
     }
 }

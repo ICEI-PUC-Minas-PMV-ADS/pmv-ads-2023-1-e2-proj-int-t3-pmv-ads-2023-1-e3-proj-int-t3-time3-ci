@@ -17,7 +17,7 @@
 
             $("#exibicao").append(data);
         });
-        $.get('@Url.Action("ListarSolicitacao", "SolicitacaoAreaComums")', {}, function (data) {
+        $.get('@Url.Action("ListarAprovacoes", "Usuarios")', {}, function (data) {
 
             $("#exibicao").append(data);
         });
