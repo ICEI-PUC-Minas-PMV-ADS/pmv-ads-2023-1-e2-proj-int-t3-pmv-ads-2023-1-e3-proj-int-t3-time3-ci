@@ -1,0 +1,20 @@
+﻿
+<nav>
+    <button onclick="carregarCadastroSolicitacaoAreaComum()">Solicitar uso de Area Comum</button>
+    <button onclick="carregarCadastroUsuarios()">Notificações</button>
+    <button onclick="carrgarCadastroMoradia()">Ata das Reuniões</button>
+</nav>
+
+<div id="exibicao"></div>
+<script type="text/javascript">
+
+    function carregarCadastroSolicitacaoAreaComum() {
+
+        $.get('@Url.Action("Listagem", "SolicitacaoAreaComums")', {}, function (data) {
+
+            $("#exibicao").empty();
+            $("#exibicao").html(data);
+
+        });
+    }
+</script>

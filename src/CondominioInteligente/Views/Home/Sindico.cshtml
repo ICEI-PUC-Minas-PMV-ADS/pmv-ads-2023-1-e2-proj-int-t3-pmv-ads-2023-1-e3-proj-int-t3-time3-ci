@@ -1,14 +1,27 @@
 ﻿
 <nav>
-    <button onclick="showSolicitacoes()">Solicitações</button>
+    <button onclick="carregarsolicitacoes()">Solicitações</button>
     <button onclick="carregarCadastroUsuarios()">Cadastro De usuário</button>
     <button onclick="carregarCadastroMoradia()">Cadastro de Moradia</button>
     <button onclick="carregarCadastroAreasComuns()">Cadastro de Area Comum</button>
-    <button onclick="showReuniao()">Reuniao</button>
+    <button onclick="carregarCadastroReuniao()">Reunião</button>
 
 </nav>
 <div id="exibicao"></div>
 <script type="text/javascript">
+
+    function carregarsolicitacoes() {
+
+        $("#exibicao").empty();
+        $.get('@Url.Action("ListarSolicitacao", "SolicitacaoAreaComums")', {}, function (data) {
+
+            $("#exibicao").append(data);
+        });
+        $.get('@Url.Action("ListarSolicitacao", "SolicitacaoAreaComums")', {}, function (data) {
+
+            $("#exibicao").append(data);
+        });
+    }
 
     function carregarCadastroUsuarios() {
 
@@ -41,7 +54,7 @@
     }
         function carregarCadastroReuniao() {
 
-            $.get('@Url.Action("Listagem", "Reuniao")', {}, function (data) {
+            $.get('@Url.Action("Listagem", "Reuniaos")', {}, function (data) {
 
                 $("#exibicao").empty();
                 $("#exibicao").html(data);

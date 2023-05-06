@@ -1,0 +1,50 @@
+﻿@model IEnumerable<CondominioInteligente.Models.SolicitacaoAreaComum>
+
+<h2>Uso Area Comum</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UsuarioSolictante)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Area)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataInicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataFim)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.aprovado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsuarioSolictante.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Area.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataInicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataFim)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.aprovado)
+            </td>
+            <td>
+                    <a asp-action="Reprovar" asp-route-id="@item.CodSolictacao">Reprovar</a> |
+                    <a asp-action="Aprovar" asp-route-id="@item.CodSolictacao">Aprovar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

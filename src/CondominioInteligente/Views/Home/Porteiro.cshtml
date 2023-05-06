@@ -1,0 +1,18 @@
+﻿
+<nav>
+    <button onclick="carregarRecebimentoEncomenda()">Recebimento de Encomenda</button>
+</nav>
+
+<div id="exibicao"></div>
+<script type="text/javascript">
+
+    function carregarRecebimentoEncomenda() {
+
+        $.get('@Url.Action("Listagem", "Usuarios")', {}, function (data) {
+
+            $("#exibicao").empty();
+            $("#exibicao").html(data);
+
+        });
+    }
+</script>

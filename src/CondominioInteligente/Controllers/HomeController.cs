@@ -19,9 +19,16 @@ namespace CondominioInteligente.Controllers
         }
         public IActionResult Sindico()
         {
-            return View("Sindico");
+            return View();
         }
-
+        public IActionResult Proprietario()
+        {
+            return View();
+        }
+        public IActionResult Porteiro()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
