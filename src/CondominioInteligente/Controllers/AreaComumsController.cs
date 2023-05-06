@@ -30,7 +30,7 @@ namespace CondominioInteligente.Controllers
         public async Task<IActionResult> Listagem()
         {
             return _context.AreaComum != null ?
-                        PartialView(await _context.AreaComum.ToListAsync()) :
+                        PartialView("Index", await _context.AreaComum.ToListAsync()) :
                         Problem("Entity set 'CondominioInteligenteContext.AreaComum'  is null.");
         }
 

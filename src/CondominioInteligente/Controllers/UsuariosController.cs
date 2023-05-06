@@ -32,8 +32,6 @@ namespace CondominioInteligente.Controllers
             return PartialView("Index", usarios);
         }
 
-
-
         // GET: Usuarios/Details/5
         public async Task<IActionResult> Details(int? id)
         {

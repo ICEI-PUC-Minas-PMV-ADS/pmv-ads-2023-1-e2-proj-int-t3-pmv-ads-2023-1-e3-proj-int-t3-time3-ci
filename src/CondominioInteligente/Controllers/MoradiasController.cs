@@ -26,13 +26,14 @@ namespace CondominioInteligente.Controllers
             return View(await condominioInteligenteContext.ToListAsync());
         }
 
-
-        // GET: Moradias
         public async Task<IActionResult> Listagem()
         {
             var condominioInteligenteContext = _context.Moradia.Include(m => m.Proprietario);
-            return PartialView("Index",await condominioInteligenteContext.ToListAsync());
+            return PartialView("Index", await condominioInteligenteContext.ToListAsync());
         }
+
+        // GET: Moradias
+
 
         // GET: Moradias/Details/5
         public async Task<IActionResult> Details(int? id)

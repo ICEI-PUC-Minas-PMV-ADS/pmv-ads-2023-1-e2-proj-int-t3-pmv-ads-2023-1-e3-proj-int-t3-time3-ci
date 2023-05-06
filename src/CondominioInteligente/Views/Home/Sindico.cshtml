@@ -2,8 +2,8 @@
 <nav>
     <button onclick="showSolicitacoes()">Solicitações</button>
     <button onclick="carregarCadastroUsuarios()">Cadastro De usuário</button>
-    <button onclick="carrgarCadastroMoradia()">Cadastro de Moradia</button>
-    <button onclick="cadastrarAreasComuns()">Cadastro de Area Comum</button>
+    <button onclick="carregarCadastroMoradia()">Cadastro de Moradia</button>
+    <button onclick="carregarCadastroAreasComuns()">Cadastro de Area Comum</button>
     <button onclick="showReuniao()">Reuniao</button>
 
 </nav>
@@ -20,7 +20,7 @@
         });
     }
 
-    function carrgarCadastroMoradia() {
+    function carregarCadastroMoradia() {
 
         $.get('@Url.Action("Listagem", "Moradias")', {}, function (data) {
 
@@ -30,7 +30,7 @@
         });
     }
 
-    function cadastrarAreasComuns() {
+    function carregarCadastroAreasComuns() {
 
         $.get('@Url.Action("Listagem", "AreaComums")', {}, function (data) {
 
@@ -39,7 +39,14 @@
 
         });
     }
+        function carregarCadastroReuniao() {
 
+            $.get('@Url.Action("Listagem", "Reuniao")', {}, function (data) {
 
-   
+                $("#exibicao").empty();
+                $("#exibicao").html(data);
+
+            });
+        }
+
 </script>
