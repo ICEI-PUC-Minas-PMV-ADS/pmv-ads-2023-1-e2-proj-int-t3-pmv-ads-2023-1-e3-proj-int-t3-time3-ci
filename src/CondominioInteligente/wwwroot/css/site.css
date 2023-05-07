@@ -69,7 +69,6 @@ nav {
         font-size: 18px;
         background-color: #5795d3;
         color: #fff;
-        padding: 10px 20px;
         border: none;
         cursor: pointer;
         padding: 10px 20px;
@@ -79,6 +78,16 @@ nav {
         nav button:hover {
             background-color: #3b76b1;
         }
+
+.botao-home {
+    font-size: 18px;
+    background-color: #5795d3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 15px 25px;
+}
 
 .screen {
     display: none;

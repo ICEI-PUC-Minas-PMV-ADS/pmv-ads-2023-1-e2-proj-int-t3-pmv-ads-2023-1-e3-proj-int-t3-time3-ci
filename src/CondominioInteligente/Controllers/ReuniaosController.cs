@@ -26,7 +26,12 @@ namespace CondominioInteligente.Controllers
             return View(await condominioInteligenteContext.ToListAsync());
         }
 
-        // GET: Reuniaos/Details/5
+        public async Task<IActionResult> Listagem()
+        {
+            var condominioInteligenteContext = _context.Reuniao.Include(r => r.UsuarioMaster);
+            return PartialView("Index", await condominioInteligenteContext.ToListAsync());
+        }
+
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Reuniao == null)

@@ -17,7 +17,18 @@ namespace CondominioInteligente.Controllers
         {
             return View();
         }
-
+        public IActionResult Sindico()
+        {
+            return View();
+        }
+        public IActionResult Proprietario()
+        {
+            return View();
+        }
+        public IActionResult Porteiro()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

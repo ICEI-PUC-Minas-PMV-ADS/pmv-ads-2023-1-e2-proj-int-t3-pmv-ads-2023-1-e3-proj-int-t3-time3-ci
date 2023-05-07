@@ -1,13 +1,9 @@
 ﻿@model IEnumerable<CondominioInteligente.Models.Moradia>
 
-@{
-    ViewData["Title"] = "Index";
-}
-
-<h1>Index</h1>
+<h1>Moradias</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Criar novo</a>
 </p>
 <table class="table">
     <thead>
@@ -31,9 +27,9 @@
                 @Html.DisplayFor(modelItem => item.Proprietario.Nome)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.CodMoradia">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CodMoradia">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CodMoradia">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.CodMoradia">Alterar</a> |
+                <a asp-action="Details" asp-route-id="@item.CodMoradia">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.CodMoradia">Excluir</a>
             </td>
         </tr>
 }
