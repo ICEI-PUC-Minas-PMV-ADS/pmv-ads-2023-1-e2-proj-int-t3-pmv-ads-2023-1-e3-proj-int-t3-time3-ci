@@ -19,11 +19,19 @@
 
     </header>
 
+    <nav>
+        <button> <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuários</a></button>
+        <button> <a class="nav-link text-dark" asp-area="" asp-controller="AreaComums" asp-action="Index">Áreas Comums</a></button>
+        <button> <a class="nav-link text-dark" asp-area="" asp-controller="Documentoes" asp-action="Index">Documentações</a></button>
+        <button> <a class="nav-link text-dark" asp-area="" asp-controller="Moradias" asp-action="Index">Moradias</a></button>
+        <button> <a class="nav-link text-dark" asp-area="" asp-controller="Reuniaos" asp-action="Index">Reuniões</a></button>
+
+    </nav>
+
     <main>
         @RenderBody()
     </main>
-
-    <footer class="border-top footer text-muted">
+        <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2023 - CondominioInteligente - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
