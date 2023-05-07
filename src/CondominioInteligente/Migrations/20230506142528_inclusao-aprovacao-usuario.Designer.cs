@@ -4,6 +4,7 @@ using CondominioInteligente.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CondominioInteligente.Migrations
 {
     [DbContext(typeof(CondominioInteligenteContext))]
-    partial class CondominioInteligenteContextModelSnapshot : ModelSnapshot
+    [Migration("20230506142528_inclusao-aprovacao-usuario")]
+    partial class inclusaoaprovacaousuario
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -143,38 +146,6 @@ namespace CondominioInteligente.Migrations
                     b.ToTable("Reuniao");
                 });
 
-            modelBuilder.Entity("CondominioInteligente.Models.SolicitacaoAreaComum", b =>
-                {
-                    b.Property<int>("CodSolictacao")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CodSolictacao"));
-
-                    b.Property<int>("CodArea")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CodUsuario")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("DataFim")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DataInicio")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool?>("aprovado")
-                        .HasColumnType("bit");
-
-                    b.HasKey("CodSolictacao");
-
-                    b.HasIndex("CodArea");
-
-                    b.HasIndex("CodUsuario");
-
-                    b.ToTable("SolicitacaoAreaComum");
-                });
-
             modelBuilder.Entity("CondominioInteligente.Models.Usuario", b =>
                 {
                     b.Property<int>("CodUsuario")
@@ -183,7 +154,7 @@ namespace CondominioInteligente.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CodUsuario"));
 
-                    b.Property<bool?>("Aprovado")
+                    b.Property<bool>("Aprovado")
                         .HasColumnType("bit");
 
                     b.Property<int>("CodTipoUsuario")
@@ -251,25 +222,6 @@ namespace CondominioInteligente.Migrations
                         .IsRequired();
 
                     b.Navigation("UsuarioMaster");
-                });
-
-            modelBuilder.Entity("CondominioInteligente.Models.SolicitacaoAreaComum", b =>
-                {
-                    b.HasOne("CondominioInteligente.Models.AreaComum", "Area")
-                        .WithMany()
-                        .HasForeignKey("CodArea")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CondominioInteligente.Models.Usuario", "UsuarioSolictante")
-                        .WithMany()
-                        .HasForeignKey("CodUsuario")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Area");
-
-                    b.Navigation("UsuarioSolictante");
                 });
 
             modelBuilder.Entity("CondominioInteligente.Models.Reuniao", b =>

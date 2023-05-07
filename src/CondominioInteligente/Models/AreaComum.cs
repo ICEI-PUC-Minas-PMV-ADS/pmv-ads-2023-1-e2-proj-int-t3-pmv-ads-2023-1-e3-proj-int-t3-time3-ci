@@ -9,8 +9,8 @@ namespace CondominioInteligente.Models
     {
         [Key]
         public int CodArea { get; set; }
-        [Required(ErrorMessage = "Obrigatório Informar o Nome")]
 
+        [Required(ErrorMessage = "Obrigatório Informar o Nome")]
         public string Nome { get; set; } = string.Empty;
     }
 }

@@ -4,6 +4,7 @@ using CondominioInteligente.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CondominioInteligente.Migrations
 {
     [DbContext(typeof(CondominioInteligenteContext))]
-    partial class CondominioInteligenteContextModelSnapshot : ModelSnapshot
+    [Migration("20230506190743_solictacoes-ajuste")]
+    partial class solictacoesajuste
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -154,23 +157,23 @@ namespace CondominioInteligente.Migrations
                     b.Property<int>("CodArea")
                         .HasColumnType("int");
 
-                    b.Property<int>("CodUsuario")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("DataFim")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DataInicio")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool?>("aprovado")
+                    b.Property<int>("UsuarioSolictanteCodUsuario")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("aprovado")
                         .HasColumnType("bit");
 
                     b.HasKey("CodSolictacao");
 
                     b.HasIndex("CodArea");
 
-                    b.HasIndex("CodUsuario");
+                    b.HasIndex("UsuarioSolictanteCodUsuario");
 
                     b.ToTable("SolicitacaoAreaComum");
                 });
@@ -183,7 +186,7 @@ namespace CondominioInteligente.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CodUsuario"));
 
-                    b.Property<bool?>("Aprovado")
+                    b.Property<bool>("Aprovado")
                         .HasColumnType("bit");
 
                     b.Property<int>("CodTipoUsuario")
@@ -263,7 +266,7 @@ namespace CondominioInteligente.Migrations
 
                     b.HasOne("CondominioInteligente.Models.Usuario", "UsuarioSolictante")
                         .WithMany()
-                        .HasForeignKey("CodUsuario")
+                        .HasForeignKey("UsuarioSolictanteCodUsuario")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

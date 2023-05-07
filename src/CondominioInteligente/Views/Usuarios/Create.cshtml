@@ -1,43 +1,38 @@
 ﻿@model CondominioInteligente.Models.Usuario
-
-@{
-    ViewData["Title"] = "Create";
-}
-
-<h1>Create</h1>
-
-<h4>Usuario</h4>
-<hr />
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="CodTipoUsuario" class="control-label"></label>
-                <input asp-for="CodTipoUsuario" class="form-control" />
-                <span asp-validation-for="CodTipoUsuario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Nome" class="control-label"></label>
-                <input asp-for="Nome" class="form-control" />
-                <span asp-validation-for="Nome" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
+    <div class="container">
+        <form asp-action="Create" class="template-content">
+
+            <label for="name">Nome completo</label>
+            <input type="text" id="name" required asp-for="Nome">
+            <span asp-validation-for="Nome" class="text-danger"></span>
+
+
+            <label for="tel">Telefone</label>
+            <input type="phone" id="tel" required>
+
+            <label for="apartment">Número do Apartamento</label>
+            <input type="text" id="apartment" required>
+
+            <label for="bloco">Bloco</label>
+            <input type="number" id="bloco" required>
+
+            <select name="tipoUsuario" asp-for="CodTipoUsuario">
+                <option value="1">Morador</option>
+                <option value="2">Porteiro</option>
+                <option value="3">Síndico</option>
+            </select>
+            <span asp-validation-for="CodTipoUsuario" class="text-danger"></span>
+
+            <input class="openModalButton" type="submit" value="Cadastrar">
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

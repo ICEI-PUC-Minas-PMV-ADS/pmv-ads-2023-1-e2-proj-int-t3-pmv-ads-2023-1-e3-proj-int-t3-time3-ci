@@ -19,12 +19,23 @@ namespace CondominioInteligente.Controllers
             _context = context;
         }
 
-        // GET: Usuarios
         public async Task<IActionResult> Index()
         {
-              return _context.Usuario != null ? 
-                          View("Sindico",await _context.Usuario.FirstOrDefaultAsync(u => u.CodTipoUsuario == 1)) :
-                          Problem("Entity set 'CondominioInteligenteContext.Usuario'  is null.");
+            var usarios = await _context.Usuario.Where(u => u.CodTipoUsuario == 1).ToListAsync();
+
+            return View(usarios);
+        }
+        public async Task<IActionResult> Listagem()
+        {
+            var usarios = await _context.Usuario.Where(u => u.CodTipoUsuario == 1).ToListAsync();
+
+            return PartialView("Index", usarios);
+        }
+        public async Task<IActionResult> ListarAprovacoes()
+        {
+            var usarios = await _context.Usuario.Where(u => u.CodTipoUsuario == 1 && u.Aprovado == null).ToListAsync();
+
+            return PartialView("ListarAprovacoes", usarios);
         }
 
         // GET: Usuarios/Details/5
@@ -60,6 +71,7 @@ namespace CondominioInteligente.Controllers
         {
             if (ModelState.IsValid)
             {
+                usuario.Aprovado = null;
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -150,14 +162,52 @@ namespace CondominioInteligente.Controllers
             {
                 _context.Usuario.Remove(usuario);
             }
-            
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        // POST: Usuarios/Aprovar/5
+        [HttpPost, ActionName("Aprovar")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Aprovar(int id)
+        {
+            if (_context.Usuario == null)
+            {
+                return Problem("Entity set 'CondominioInteligenteContext.Usuario'  is null.");
+            }
+            var usuario = await _context.Usuario.FindAsync(id);
+            if (usuario != null)
+            {
+                usuario.Aprovado = true;
+                _context.Usuario.Update(usuario);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        // POST: Usuarios/Reprovar/5
+        [HttpPost, ActionName("Reprovar")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Reprovar(int id)
+        {
+            if (_context.Usuario == null)
+            {
+                return Problem("Entity set 'CondominioInteligenteContext.Usuario'  is null.");
+            }
+            var usuario = await _context.Usuario.FindAsync(id);
+            if (usuario != null)
+            {
+                usuario.Aprovado = false;
+                _context.Usuario.Update(usuario);
+            }
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool UsuarioExists(int id)
         {
-          return (_context.Usuario?.Any(e => e.CodUsuario == id)).GetValueOrDefault();
+            return (_context.Usuario?.Any(e => e.CodUsuario == id)).GetValueOrDefault();
         }
     }
 }

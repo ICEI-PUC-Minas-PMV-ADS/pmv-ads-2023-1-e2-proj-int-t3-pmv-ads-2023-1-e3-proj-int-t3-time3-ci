@@ -1,0 +1,43 @@
+﻿@model IEnumerable<CondominioInteligente.Models.SolicitacaoAreaComum>
+
+<h1>Solicitações de reserva de áreas comuns</h1>
+
+<p>
+    <a asp-action="Create">Criar novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DataInicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataFim)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.aprovado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataInicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataFim)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.aprovado)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.CodSolictacao">Alterar</a> |
+                <a asp-action="Details" asp-route-id="@item.CodSolictacao">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.CodSolictacao">Excluir</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

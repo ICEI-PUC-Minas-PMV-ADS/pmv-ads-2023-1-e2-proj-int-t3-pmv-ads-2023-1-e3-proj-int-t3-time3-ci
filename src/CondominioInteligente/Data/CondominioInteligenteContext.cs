@@ -23,5 +23,7 @@ namespace CondominioInteligente.Data
         public DbSet<CondominioInteligente.Models.Reuniao>? Reuniao { get; set; }
 
         public DbSet<CondominioInteligente.Models.Documento>? Documento { get; set; }
+
+        public DbSet<CondominioInteligente.Models.SolicitacaoAreaComum>? SolicitacaoAreaComum { get; set; }
     }
 }
