@@ -9,13 +9,10 @@
 
 
             <label for="tel">Telefone</label>
-            <input type="phone" id="tel" required>
+            <input type="phone" id="tel" required asp-for="Telefone">
 
-            <label for="apartment">Número do Apartamento</label>
-            <input type="text" id="apartment" required>
-
-            <label for="bloco">Bloco</label>
-            <input type="number" id="bloco" required>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" required asp-for="Email">
 
             <select name="tipoUsuario" asp-for="CodTipoUsuario">
                 <option value="1">Morador</option>

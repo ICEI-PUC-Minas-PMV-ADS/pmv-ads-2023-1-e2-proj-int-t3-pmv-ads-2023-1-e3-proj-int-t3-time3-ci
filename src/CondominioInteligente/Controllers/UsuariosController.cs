@@ -21,9 +21,9 @@ namespace CondominioInteligente.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var usarios = await _context.Usuario.Where(u => u.CodTipoUsuario == 1).ToListAsync();
-
-            return View(usarios);
+            return _context.Usuario != null ?
+                          View(await _context.Usuario.ToListAsync()) :
+                          Problem("Entity set 'CondominioInteligenteContext.Usuario'  is null.");
         }
         public async Task<IActionResult> Listagem()
         {
@@ -67,7 +67,7 @@ namespace CondominioInteligente.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Cod_Usuario,Cod_Tipo_Usuario,Nome,Email")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("CodUsuario,CodTipoUsuario,Nome,Email,Telefone")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
@@ -100,7 +100,7 @@ namespace CondominioInteligente.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Cod_Usuario,Cod_Tipo_Usuario,Nome,Email")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("CodUsuario,CodTipoUsuario,Nome,Email,Telefone")] Usuario usuario)
         {
             if (id != usuario.CodUsuario)
             {
