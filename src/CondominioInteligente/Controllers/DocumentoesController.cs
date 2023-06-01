@@ -52,10 +52,16 @@ namespace CondominioInteligente.Controllers
         }
 
         // GET: Documentoes/Create
-        public IActionResult Create()
+        public IActionResult Create(int? codReuniao = null)
         {
             ViewData["CodReuniao"] = new SelectList(_context.Reuniao, "CodReuniao", "Pauta");
-            return View();
+            if (codReuniao == null)
+                return View();
+            else
+            {
+                ViewData["retornarReuniao"] = true;
+                return View(new Documento { CodReuniao = codReuniao.Value });
+            }
         }
 
         // POST: Documentoes/Create
@@ -161,14 +167,14 @@ namespace CondominioInteligente.Controllers
             {
                 _context.Documento.Remove(documento);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool DocumentoExists(int id)
         {
-          return (_context.Documento?.Any(e => e.CodDocumento == id)).GetValueOrDefault();
+            return (_context.Documento?.Any(e => e.CodDocumento == id)).GetValueOrDefault();
         }
     }
 }
