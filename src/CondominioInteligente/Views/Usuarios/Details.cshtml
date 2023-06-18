@@ -33,6 +33,6 @@
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.CodUsuario">Alterar</a> |
-    <a asp-action="Index">Back to List</a>
+    <a class="bottomNav" onclick="history.go(-1); return false;" href="#">Voltar</a>
 </div>
 

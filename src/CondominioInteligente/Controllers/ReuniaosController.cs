@@ -58,6 +58,13 @@ namespace CondominioInteligente.Controllers
             ViewData["CodUsuario"] = new SelectList(_context.Usuario, "CodUsuario", "Nome");
             return View();
         }
+        // GET: Reuniaos/Doceumento/Create
+        public IActionResult CriarDocuemnto(int id)
+        {
+            ViewData["CodUsuario"] = new SelectList(_context.Usuario, "CodUsuario", "Nome");
+            return RedirectToAction("Create", "Documentoes", new Documento{ CodReuniao = id });
+
+        }
 
         // POST: Reuniaos/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
