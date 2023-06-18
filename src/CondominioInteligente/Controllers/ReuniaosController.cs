@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CondominioInteligente.Data;
 using CondominioInteligente.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CondominioInteligente.Controllers
 {
+    [Authorize]
     public class ReuniaosController : Controller
     {
         private readonly CondominioInteligenteContext _context;

@@ -19,6 +19,19 @@ namespace CondominioInteligente.Models
 
         public string Telefone { get; set; } = string.Empty;
 
+        [Required(ErrorMessage = "Obrigatório Informar Senha! ")]
+        [DataType(DataType.Password)]
+        public string Senha { get; set; } = string.Empty;
+
+        public Perfis Perfil { get; set; }
+
+        public enum Perfis
+        {
+            Morador,
+            Porteiro,
+            Sindico
+        }
+
         public ICollection<AreaComum>? AreaComums { get; set; }
 
         public ICollection<Moradia>? Moradias { get; set; }

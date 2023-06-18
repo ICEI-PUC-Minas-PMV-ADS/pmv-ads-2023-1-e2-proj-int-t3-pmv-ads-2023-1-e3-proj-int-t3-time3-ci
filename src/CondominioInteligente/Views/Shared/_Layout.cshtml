@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CondominioInteligente.styles.css" asp-append-version="true" />
+
 </head>
 <body>
     <header>
@@ -15,6 +16,18 @@
                 <button class="botao-home" onclick="irParaHome()">Home </button>
             </div>
             <h1 class="  flex-grow-1">Condomínio Inteligente</h1>
+            <div class="align-self-center">
+                @if(User.Identity.IsAuthenticated)
+                {
+                    <span>Olá, @User.Identity.Name </span>
+                    <button> <a class="nav-link text-light" asp-area="" asp-controller="Usuarios" asp-action="Logout">Logout</a></button>
+                }
+                else 
+                {
+                    <button> <a class="nav-link text-light" asp-area="" asp-controller="Usuarios" asp-action="Login">Login</a></button>
+                }
+            </div>
+
         </div>
 
     </header>
@@ -42,11 +55,11 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        function irParaHome() {
+            window.location.href = '/Home'
+        }
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
-<script>
-    function irParaHome() {
-        window.location.href = '/Home'
-    }
-</script>
 </html>
